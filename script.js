@@ -1,6 +1,6 @@
 // Задание 1
 function isNumberInRange(number){
-  if(number > 0 && number < 10 && number == undefined){
+  if(number > 0 && number < 10) {
       return true;
   } else{
       return false;
@@ -9,28 +9,24 @@ function isNumberInRange(number){
 var number = prompt('Введите любое число от 0 до 10');
 if(isNumberInRange(number)){
   alert('Правильно');
-} else if(isNumberInRange(number)){
-  alert('Ошибка. Введите число в правильном диапазоне!');
 } else {
-  alert('Ничего не было введено');
+  alert('Ошибка. Введите число в правильном диапазоне!');
 }
 
 // Задание 2
 function isEven(intNumber){
-  if(intNumber%2 == 0 && intNumber == undefined){
-      return true;
+  if(intNumber%2 == 0){
+    return true;
   } else {
-      return false;
+    return false;
   }
 }
 var intNumber = prompt('Введите любое целое число для проверки');
 if (isEven(intNumber)){
   alert('Введенное число четное');
-} else if(isEven(intNumber)){
-  alert('Введенное число нечетное');
 } else {
-  alert('Ничего не было введено');
-}
+  alert('Введенное число нечетное');
+} 
 
 // Задание 3
 
@@ -46,8 +42,6 @@ switch (value){
   case 3:
     alert('2,3');
     break;
-  default:
-    alert('Такого значение не существует');
 }
 
 // Задание 4
